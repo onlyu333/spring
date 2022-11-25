@@ -1,5 +1,7 @@
 package com.human.dao;
 
+import java.util.List;
+
 import javax.inject.Inject;
 
 import org.apache.ibatis.session.SqlSession;
@@ -20,6 +22,13 @@ public class springDAOImpl implements IF_springDAO {
 	public void insertOne(springVO svo) throws Exception {
 		// TODO Auto-generated method stub
 		SqlSession.insert(mapperQuery+".insertOne",svo);
+	}
+
+	@Override
+	public List<springVO> selectAll() throws Exception {
+		// TODO Auto-generated method stub
+		
+		return SqlSession.selectList(mapperQuery+".selectAll");
 	}
 
 }

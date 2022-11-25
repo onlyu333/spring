@@ -1,5 +1,7 @@
 package com.human.service;
 
+import java.util.List;
+
 import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
@@ -14,6 +16,11 @@ public class springServicsImpl implements IF_springService{
 	public void insertOne(springVO svo) throws Exception {
 		// TODO Auto-generated method stub
 		sdao.insertOne(svo);
+	}
+	@Override
+	public List<springVO> selectAll() throws Exception {
+		// TODO Auto-generated method stub
+		return sdao.selectAll();
 	}
 
 }

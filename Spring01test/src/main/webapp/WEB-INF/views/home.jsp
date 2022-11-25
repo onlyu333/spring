@@ -12,7 +12,7 @@
 </h1>
 <header>Spring BBS</header>
 <nav>
-[home] <a href="wrForm">[Write]</a> [BBSList]
+[home] <a href="wrForm">[Write]</a> <a href="bbsList">[BBSList]</a>
 
 
 

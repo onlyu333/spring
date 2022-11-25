@@ -8,11 +8,12 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 insert into board2 values(board2_cnt.nextval,#{name},#{email},#{title},#{content},#{pass},default,default)
 </insert>
 
-<!-- <update id="">
-</update>
-<select id="">
-</select> -->
-
+<!--  <update id="">
+</update> -->
+<!-- 쿼리문 파라미터 리턴값 조금 더 깊이 자료형이 무엇인가 파라미터 객체? String Integer 리턴값은 단일 객체인가 List인가 String? Integer?  -->
+<select id="selectAll" resultType="com.human.vo.springVO">
+select * from board2
+</select> 
 
 
 

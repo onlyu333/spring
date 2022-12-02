@@ -9,8 +9,17 @@ public class springVO {
 	public String content;
 	public int cnt;
 	public String indate;
+	private String[] files;//클라이언트부터 받은 파일을 바로 저장하지 않습니다. 컨트롤러가 작업해서 셋팅함
 
 
+	public String[] getFiles() {
+		return files;
+	}
+	public void setFiles(String[] files) {
+		this.files = files;
+	}
+	
+	
 	public int getNum() {
 		return num;
 	}

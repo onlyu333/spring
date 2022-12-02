@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
    pageEncoding="UTF-8"%>
+     <%@ include file="../top.jsp"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -17,7 +18,8 @@
 <body>
    <div id="wrap" align="center">
       <h1>게시글 등록</h1>
-      <form name="frm" method="post" action="wrAction">
+      <form name="frm" method="post" action="wrAction" encType="multipart/form-data">
+                                                          <!-- encType을 적어줘야만 첨부파일이 서버로 전송된다. -->
          <table>
             <tr>
                <th>작성자</th>
@@ -43,6 +45,14 @@
             <tr>
                <th>내용</th>
                <td><textarea cols="70" rows="15" name="content"></textarea></td>
+            </tr>
+            <tr>
+               <th>첨부파일</th>
+               <td><input type="file" name ="file"></td>
+            </tr>
+              <tr>
+               <th>첨부파일</th>
+               <td><input type="file" name ="file"></td>
             </tr>
          </table>
          <br>
